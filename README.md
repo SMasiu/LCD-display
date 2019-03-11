@@ -1,5 +1,8 @@
 # LCD-display
-LCD display as an angular component
+LCD display as an angular component.<br> Choose your colors,size and number range!
+
+<img src="lcd-preview-red.PNG">
+<img src="lcd-preview-green.PNG">
 
 # How to use it!
 Download lcd-display-component floder<br>
