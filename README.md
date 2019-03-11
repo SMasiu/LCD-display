@@ -10,7 +10,7 @@ Paste it into your angular app,<br>
 and declarate it in declarations array in app.module.ts,<br>
 then you can use lcd-component<br>
 
-# HTML template
+# HTML selector
 \<app-lcd-display\>\</app-lcd-display\>
 
 # Component inputs:
