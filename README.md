@@ -1,6 +1,12 @@
 # LCD-display
 LCD display as an angular component
 
+# How to use it!
+Download lcd-display-component floder
+Paste it into your angular app, 
+and declarate it in declarations array in app.module.ts,
+then you can use lcd-component
+
 # HTML template
 \<app-lcd-display\>\</app-lcd-display\>
 
