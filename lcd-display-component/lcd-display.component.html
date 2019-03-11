@@ -1,0 +1,23 @@
+<div class="counter" *ngIf="displayValue" [style.background-color]="backgroundColor" [style.height]="height">
+  <div class="number" [style.width]="width" *ngFor="let char of displayValue.split('')">
+
+    <div class="number-box">
+
+      <div class="top border" [style.border-top-color]="char.match(reg1) ? disabledColor: activeColor"></div>
+      <div class="left border" [style.border-left-color]="char.match(reg2) ? disabledColor: activeColor"></div>
+      <div class="right border" [style.border-right-color]="char.match(reg3) ? disabledColor: activeColor"></div>
+      <div class="bottom border center" [style.border-bottom-color]="char.match(reg4) ? disabledColor: activeColor"></div>
+
+    </div>
+
+    <div class="number-box">
+
+      <div class="top border center" [style.border-top-color]="char.match(reg4) ? disabledColor: activeColor"></div>
+      <div class="left border" [style.border-left-color]="char.match(reg5) ? disabledColor: activeColor"></div>
+      <div class="right border" [style.border-right-color]="char.match(reg6) ? disabledColor: activeColor"></div>
+      <div class="bottom border" [style.border-bottom-color]="char.match(reg7) ? disabledColor: activeColor"></div>
+
+    </div>
+
+  </div>
+</div>
