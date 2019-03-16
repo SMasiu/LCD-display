@@ -58,7 +58,7 @@ export class LcdDisplayComponent implements OnInit {
 
     this.displayValue = this.number.toString();
 
-    if( this.minNumberLength > this.maxNumberLength )
+    if( (this.minNumberLength > this.maxNumberLength) && this.maxNumberLength !== null )
       throw new Error("min number can't be higher than max");
 
     //checking for min number lenght
@@ -90,3 +90,4 @@ export class LcdDisplayComponent implements OnInit {
   }
 
 }
+
