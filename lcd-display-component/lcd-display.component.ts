@@ -13,7 +13,7 @@ export class LcdDisplayComponent implements OnInit {
   default 0*/
   @Input() set number(v) { 
     this._number = v; 
-    this.displayValue = this._number.toString(); 
+    this.showNumber();
   }
 
   /*display's background-color
@@ -59,7 +59,7 @@ export class LcdDisplayComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  showNumber() {
 
     this.displayValue = this._number.toString();
 
@@ -91,6 +91,12 @@ export class LcdDisplayComponent implements OnInit {
       this.displayValue = output;
 
     }
+
+  }
+
+  ngOnInit() {
+
+    this.showNumber();
 
   }
 
