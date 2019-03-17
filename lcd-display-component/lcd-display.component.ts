@@ -7,9 +7,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LcdDisplayComponent implements OnInit {
 
+  _number: number = 0;
+
   /*number to display
   default 0*/
-  @Input() number: number = 0;
+  @Input() set number(v) { 
+    this._number = v; 
+    this.displayValue = this._number.toString(); 
+  }
 
   /*display's background-color
   default #000 (black) */
@@ -56,7 +61,7 @@ export class LcdDisplayComponent implements OnInit {
 
   ngOnInit() {
 
-    this.displayValue = this.number.toString();
+    this.displayValue = this._number.toString();
 
     if( (this.minNumberLength > this.maxNumberLength) && this.maxNumberLength !== null )
       throw new Error("min number can't be higher than max");
@@ -90,4 +95,3 @@ export class LcdDisplayComponent implements OnInit {
   }
 
 }
-
